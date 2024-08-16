@@ -1,0 +1,122 @@
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+
+Program started at: 1720508884.4196851
+:: Confirming the provided variable names are the same ::
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                  Bucket_01.jpg  label:                     bucket
+ 3 key:                    Frog_01.jpg  label:                       frog
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:                   bucket, pail
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
++---------------+-------------+-------------------------------------------------------------------+----------------+-----------------------+
+| Filename      | Pet Label   | Classifier Label                                                  |   Pet is-a-dog |   Classifier is-a-dog |
++===============+=============+===================================================================+================+=======================+
+| Dog_01.jpg    | dog         | german shepherd, german shepherd dog, german police dog, alsatian |              1 |                     1 |
++---------------+-------------+-------------------------------------------------------------------+----------------+-----------------------+
+| Bucket_01.jpg | bucket      | bucket, pail                                                      |              0 |                     0 |
++---------------+-------------+-------------------------------------------------------------------+----------------+-----------------------+
+| Frog_01.jpg   | frog        | tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui   |              0 |                     0 |
++---------------+-------------+-------------------------------------------------------------------+----------------+-----------------------+
+| Dog_02.jpg    | dog         | german shepherd, german shepherd dog, german police dog, alsatian |              1 |                     1 |
++---------------+-------------+-------------------------------------------------------------------+----------------+-----------------------+
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:                   bucket, pail  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 4 # Matches: 4 # NOT Matches: 0
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Metric                        | Value                                                                                                                                                                                                                                          |
++===============================+================================================================================================================================================================================================================================================+
+| Total Images                  | 4                                                                                                                                                                                                                                              |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Correctly Matched Labels      | 4                                                                                                                                                                                                                                              |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Total Dog Images              | 2                                                                                                                                                                                                                                              |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Correctly Classified Dogs     | 2                                                                                                                                                                                                                                              |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Correctly Classified Non-Dogs | 2                                                                                                                                                                                                                                              |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Correctly Classified Breeds   | 2                                                                                                                                                                                                                                              |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Results Stats Dictionary      | {'n_dogs_img': 2, 'n_match': 4, 'n_correct_dogs': 2, 'n_correct_notdogs': 2, 'n_correct_breed': 2, 'n_images': 4, 'n_notdogs_img': 2, 'pct_match': 100.0, 'pct_correct_dogs': 100.0, 'pct_correct_breed': 100.0, 'pct_correct_notdogs': 100.0} |
++-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
++------------------+---------+
+| Metric           |   Value |
++==================+=========+
+| N Images         |       4 |
++------------------+---------+
+| N Dog Images     |       2 |
++------------------+---------+
+| N Not-Dog Images |       2 |
++------------------+---------+
+
+Summary Statistics (Percentages):
++---------------------+---------+
+| Percentage          |   Value |
++=====================+=========+
+| pct_match           |     100 |
++---------------------+---------+
+| pct_correct_dogs    |     100 |
++---------------------+---------+
+| pct_correct_breed   |     100 |
++---------------------+---------+
+| pct_correct_notdogs |     100 |
++---------------------+---------+
+
+Program ended at: 1720508885.202589
+
+** Total Elapsed Runtime: 0:0:0
+Program run successfully
