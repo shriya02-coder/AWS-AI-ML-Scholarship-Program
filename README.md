@@ -15,5 +15,5 @@ The AWS AI & ML Scholarship program, in collaboration with Udacity, is designed 
 
 This repository contains two projects developed as part of the scholarship program:
 
-1. **Project 1: AI Programming with Python**: This project focuses on the foundations of AI and Python programming, with hands-on experience in building AI models and applying machine learning techniques.
-2. **Project 2: Generative AI with AWS**: This project explores generative AI applications, leveraging AWS tools to build AI systems that create new content, including text, images, and more.
+1. **Project 1: Use a pretrained classifier**: This project focuses on the foundations of AI and Python programming, with hands-on experience in building AI models and applying machine learning techniques.
+2. **Project 2: Create your own classifier**: This project explores generative AI applications, leveraging AWS tools to build AI systems that create new content, including text, images, and more.
