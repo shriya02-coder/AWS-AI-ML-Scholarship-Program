@@ -26,9 +26,7 @@ pip install torch torchvision pillow numpy matplotlib
 
 ## Dataset
 
-The dataset used for this project contains images of flowers categorized into 102 different species. The dataset is organized into three parts: `train`, `valid`, and `test`. You can download the dataset from the following link:
-
-[Flower Dataset](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
+The dataset used for this project contains images of flowers categorized into 102 different species. The dataset is organized into three parts: `train`, `valid`, and `test`.
 
 After downloading, extract the dataset into a directory named `flowers/`, with the following structure:
 
